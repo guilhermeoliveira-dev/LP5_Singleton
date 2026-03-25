@@ -8,13 +8,13 @@ public class User {
 
     public User(String id, String email, String number) {
 
-        if(id.isEmpty()){
+        if(id == null || id.isEmpty()){
             throw new IllegalArgumentException("Invalid user ID");
         }
-        if(email.isEmpty()){
+        if(email == null || email.isEmpty()){
             throw new IllegalArgumentException("Invalid user email");
         }
-        if(number.isEmpty()){
+        if(number == null || number.isEmpty()){
             throw new IllegalArgumentException("Invalid user number");
         }
 
